@@ -14,6 +14,7 @@ body {
 h1 {
 	font: 48px Arimo;
 	margin: 10px 0;
+	color: white;
 }
 
 h3 {
@@ -28,24 +29,43 @@ header {
 	height: 100px;
 	text-align: center;
 	padding: 15px;
-	border: 8px solid #369;
+	background-color: #336699;
 }
 
 .col-1 {
 	float: left;
-	width: 32%;
+	width: 25%;
+	margin-top: 40px;
 }
 
 .col-2 {
 	float: left;
-	width: 66%;
+	width: 70%;
 }
- p {
- 	margin-bottom: 10px;
- 	line-height: 110%;
- }
 
- li {
- 	line-height: 110%;
- }
+.border-left {
+	border-left: 8px solid #336699;
+	margin: 30px 10px 0;
+	padding: 10px;
+}
 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+section {
+	margin-top: 40px;
+}
+
+p {
+ 	margin-bottom: 0;
+ 	line-height: 110%;
+}
+
+li {
+ 	line-height: 110%;
+}
+
+ 
