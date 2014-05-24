@@ -1,0 +1,138 @@
+@import url(http://fonts.googleapis.com/css?family=Arimo);
+
+
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+body {
+	font: 100%;
+  background: #eee;
+  color: #282828;
+  font-family: 'Arimo' sans-serif;
+}
+
+header {
+    background-color: #3f658c;
+    height: 200px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.shadow {
+  box-shadow: 8px 8px 4px #c96;
+}
+
+h1 {
+  margin: auto;
+	font-family: 'BlackJack' cursive;
+  text-align: center;
+  color: #eee;
+  font-size: 80px;
+}
+
+h2 {
+  color: #825e70;
+  font-size: 32px;
+  text-align: center;
+}
+
+h3 {
+  color: #634559;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+h4 {
+  color: #BCD74C;
+}
+
+section {
+  margin: 10px 5px;
+}
+
+#background {
+    background: #9cbaa6;
+    border-radius: 10px;
+    box-shadow: 8px 8px 4px #ccc;
+}
+s
+li {
+  line-height: 125%;
+  margin: 5px;
+}
+
+.col-1 {
+  float: left;
+  width: 30%;
+}
+
+.linkbox {
+  margin-top: 4px;
+  padding: 10px;
+}
+
+[class*="col-"] {
+  margin-left: 2%;
+}
+
+.first {
+  margin-left: 0%;
+}
+
+/*  PSUEDO CLASSES */
+a {
+  color: #699678;
+  font-family: 'Arimo';
+  text-decoration: none;
+}
+
+a:visited {
+  color: #282828;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #e66665;
+  font-weight: bold;
+}
+
+a:active {
+  color: #282828;
+  font-weight: bold;
+}
+
+
+/* ///FIXES ///*/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+}
+
+.clear {
+  clear:both;
+}
+
+/* FOOTER */
+
+footer {
+  margin-top: 250px;
+  font-size: 80%;
+  text-align: center;
+  border-top: 3px solid #c96;
+  padding: 20px;
+}
