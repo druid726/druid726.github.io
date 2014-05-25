@@ -9,6 +9,7 @@
 body {
 	font: 100% Arimo;
 	background: #eee;
+	color: #282828;
 }
 
 h1 {
@@ -30,6 +31,11 @@ header {
 	text-align: center;
 	padding: 15px;
 	background-color: #3f658c;
+  border-radius: 20px;
+}
+
+.shadow {
+  box-shadow: 8px 8px 4px #c96;
 }
 
 .col-1 {
@@ -45,7 +51,7 @@ header {
 
 .border-left {
 	border-left: 8px solid #3f658c;
-	margin: 30px 10px 0;
+	margin: 30px 10px;
 	padding: 10px;
 }
 
@@ -55,8 +61,12 @@ header {
   box-sizing: border-box;
 }
 
+.clear {
+  clear:both;
+}
+
 section {
-	margin-top: 40px;
+	margin-top: 20px;
 }
 
 p {
@@ -69,8 +79,11 @@ li {
 }
 
 footer {
-  font-size: 75%;
+  margin-top: 250px;
+  font-size: 80%;
   text-align: center;
+  border-top: 3px solid #c96;
+  padding: 20px;
 }
 
  
