@@ -85,14 +85,13 @@ li {
 
 /*  PSUEDO CLASSES */
 a {
-  color: #699678;
+  color: #4e705a;
   font-family: 'Arimo';
   text-decoration: none;
 }
 
 a:visited {
   color: #282828;
-  text-decoration: underline;
 }
 
 a:hover {

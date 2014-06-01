@@ -34,6 +34,17 @@ header {
   border-radius: 20px;
 }
 
+a {
+	margin-top: 20px;
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 15px;
+	background-color: #3f658c;
+  border-radius: 15px;
+  box-shadow: 4px 4px 2px #c96;
+}
+
 .shadow {
   box-shadow: 8px 8px 4px #c96;
 }
@@ -71,11 +82,11 @@ section {
 
 p {
  	margin-bottom: 10px;
- 	line-height: 110%;
+ 	line-height: 125%;
 }
 
 li {
- 	line-height: 110%;
+ 	line-height: 120%;
 }
 
 footer {
