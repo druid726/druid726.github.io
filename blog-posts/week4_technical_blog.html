@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="../unit1_projects/stylesheets/blog_template.css">
+		<title>Enumerable Modules</title>
+	</head>
+		<div class="wrapper">
+			<header class="shadow">
+				<h1>Enumerable Method &mdash; Your New Best Friend</h1>
+			</header>
+			<div class="col-1">
+				<h2>Patti O'Neill</h2>
+					<p>Enumerable#map</br>
+					Enumerable#group_by</br>
+					Enumerable#cycle</p>
+					<a href="../index.html">Home</a>
+			</div>
+			<body>
+				<div class="col-2 border-left">
+					<h2>Week 4 of Phase 0</h2>
+						<h3></h3>
+							<h4>7 June 2014</h4>
+							<p>What are enumerable methods and why are they your new best friend?  Well, I'm glad you asked. First let's see where the term enumberable means and its application in programming. According to Wikipedia...an enumeration is a collection of items that is a complete, ordered listing of all of the items in that collection. The term is commonly used in mathematics and theoretical computer science to refer to a listing of all of the elements of a set. Have you ever used <strong>.to_a </strong> for output and you now have an array?  Ever wonder how that happened? You can thank enumerable methods for that. Let's look at three of those methods.</p>
+							
+							<p>Our first look is at the method map.  map is one of the Enumerable iterating methods (all of which are based off of each) and is invoked by an array and/or hash (collection) and accepts a block of code that acts upon each element in that collection.</p>
+
+							<h4>Here are some examples:</h4>
+						
+							<p>(1..10).map{ |num| num*num}  => [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]</p>
+
+							<p>In this example: a range of numbers <strong>(1..10)</strong> then each number in the range was selected one at a time  <strong>|num|</strong> and then multiplied by itsef <strong>num*num</strong> to produce => <strong>[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]</strong>.  The original array is not changed, if you want to change the array use .map!</p>
+							
+							<p>alphaArray = ["a", "b", "c", "d"]</p>
+							<p>alphaArray.map(&:upcase) => ["A", "B", "C", "D"]</p>
+
+							<p>In this example: an array <strong>alphaArray = ["a", "b", "c", "d"]</strong> loops over the array selecting one element at a time <strong>map</strong> and then changes that element (letter) to upper case <strong>(&:upcase)</strong> to produce => <strong>["A", "B", "C", "D"]</strong>.</p>
+
+							<p>Our second method is group_by.  This method <strong>groups</strong> the collection <strong>by</strong> result of the block and is also part of the iterating method.  This is really cool and very useful for pulling put odd and even numbers. </p> 
+
+							<h4>Here is an example:</h4>
+
+							<p>(1..10).group_by { |num| num % 2} => {0=>[2, 4, 6, 8, 10], 1=>[1, 3, 5, 7, 9]}</p>
+
+							<p>In this example: a range of numbers <strong>(1..10)</strong> then each number in the range was selected one at a time <strong>|num|</strong> the number is divided by 2 (the % is the remainder operator) <strong>num % 2</strong> to produce two arrays even (with the remainder of 0) and odd (with the remainder of 1) => <strong>{0=>[2, 4, 6, 8, 10], 1=>[1, 3, 5, 7, 9]}</strong>.</p>
+
+
+							<p>Our third method is cycle.  This method is interesting, I guess.  As far as I can tell it only prints out the result of an array a designated number of times.  If no value is assigned you will get an infinite loop (that's bad).  If the value is a negative number or if the array is empty it doesn't do anything.</p> 
+
+							<h4>Here is an example:</h4>
+
+							<p>numbers = [1,2,3,4,5,6,7,8,9]</p>
+							<p>numbers.cycle(5) { |x| print x }  123456789123456789123456789123456789123456789</p>
+							<p>Enumerable methods are extremely helpful and can be your best friend. Making your code very clean and efficient.</p>
+				</div>
+			<footer class="clear">&copy;2014.  All Rights Reserved.</footer>
+		</div><!--wrapper -->
+	</body>
+</html>
