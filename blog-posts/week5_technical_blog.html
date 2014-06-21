@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="../unit1_projects/stylesheets/blog_template.css">
+		<title>Instance Variables</title>
+	</head>
+		<div class="wrapper">
+			<header class="shadow">
+				<h1>Instance Variables</h1>
+			</header>
+			<div class="col-1">
+				<h2>Patti O'Neill</h2>
+					<p>Instance Variables</br>
+					</br>
+					</p>
+					<a href="../index.html">Home</a>
+			</div>
+			<body>
+				<div class="col-2 border-left">
+					<h2>Week 5 of Phase 0</h2>
+						<h4>16 June 2014</h4>
+
+              <p><strong>Instance Variables &mdash; What are they?</strong></p>
+
+							<p>Instance variables are variables inside a method, inside an object which is inside a class and are identifed by an @ at the beginning of the name. Their scope is limited to whatever object <strong>self</strong> refers to. One of the neat things about them is that two different objects, even if they belong to the same class, can have different values for their instance variables. Each instance variable's scope refers to the particular <strong>instance</strong> of that class hence the name instance variable. From outside the object, instance variables cannot be altered or even observed (i.e., ruby's instance variables are never public) except when explicitly provided by the programmer (see Accessor below).</p>
+
+              <ul>
+                <li>Instance variables do not need to be declared</li>
+                <li>instance variable scope refers to the particular instance of that class</li>
+                <li>Instance variables have the nil value until they are initialized</li>
+              </ul>
+
+              <p><strong>Accessors</strong></p>
+
+              <p>You normally cannot access instance variables from outside of the an object.  This would break the rules of encapsulation. So, in order to provide access to instance variables and accessor method must be declared.</p>
+
+              <p>There are three of these helper methods. They must be run in the class scope inside the class but outside of any methods. Also, these accessors typically go at the top of the class. That gives the reader an instant overview of which member variables will be available outside the class.
+
+              <ul>
+                <li>attr_reader &ndash; allows you to view and use the instance variable but not change it.</li>
+                <li>attr_writer &ndash; allows you to change and use the instance variable.  This is tricky &ndash; you really don't want instance variable changed outside the method they were written it but if you need it you have it.</li>
+                <li>attr_accessor &ndash; grants both _reader and _writer attributes.</li>
+              </ul>
+
+              <p>So that is a brief overview of instance variables.  Listed below are some examples of when to use them.</p>
+
+              <ul>
+                <li>Instance variables should be used when they represent the state of the object.</li>
+                <li>They shouldn't be used for temporary storage, that's what local variables are for.</li>
+              </ul>
+
+				</div>
+			<footer class="clear">&copy;2014.  All Rights Reserved.</footer>
+		</div><!--wrapper -->
+	</body>
+</html>
