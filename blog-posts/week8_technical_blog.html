@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="../unit1_projects/stylesheets/blog_template.css">
+		<title>Week 8 &mdash; Dynamic vs Static Typed Languages</title>
+	</head>
+		<div class="wrapper">
+			<header class="shadow">
+				<h1>Dynamic vs Static Typed Languages</h1>
+			</header>
+			<div class="col-1">
+				<h2>Patti O'Neill</h2>
+					<a href="../index.html">Home</a>
+			</div>
+			<body>
+				<div class="col-2 border-left">
+					<h2>Week 8 of Phase 0</h2>
+						<h3></h3>
+							<h4>05 July 2014</h4>
+							<p>Dynamic Typing? Static Typing? Weak, Strong &mdash; what exactly are we talking about? Well, I do know that we are not talking about how fast you touch the keyboard but the 'type' as in data type (int, strings).</p> 
+
+              <p><strong>Dynamic Typing</strong></p>
+
+              <p>A dynamically typed language is a language where the type of a variable can be altered at any time and does not need to be declared or initialized. (It is a string, now it is a Fixnum, now it is a Time object, etc.)  </p>
+
+              <p><strong>Static Typing</strong></p>
+
+              <p>When we talk about static typing, the type of a variable is resolved in advance by the compiler. With statically typed languages, you cannot say that x is a string and, a few lines after, that it is an integer.</p>
+             
+              <p><strong>Strong Typing</strong></p>
+
+              <p>Programming languages in which variables have specific data types are strong typed. This implies that in strong typed languages, variables are necessarily bound to a particular data type.</p> 
+
+              <p><strong>Weak Typing</strong></p>
+
+              <p>As opposed to strong typed languages, weak typed languages are those in which variables are not of a specific data type. It should be noted that this does not imply that variables do not have types; it does mean that variables are not "bound" to a specific data type.</p>
+
+              <p><strong>Dynamic Typing is Good</strong></p>
+
+              <p>In a dynamic typed language, you don't have to initialize variables, which is a big bonus for many developers. Programmers like the fact that you can use a variable at will when required (without having to initialize it). Dynamic typing, in fact, does save you from writing a few "extra" lines of code, which, in turn, means less time spent writing code.</p>
+
+              <p><strong>Or Is It?</strong></p>
+
+              <p>The very characteristic of dynamic typed languages that appeals to many developers is also a pitfall, and a major one at that. Consider the following simple example:</p>
+
+              <p>/* Python code */</br>
+              my_variable = 10</br>
+              while my_variable > 0:</br>
+                      i = foo(my_variable) </br>
+                      if i < 100: </br>
+                          my_variable++ </br>
+                      else </br>
+                          my_varaible = (my_variable + i) / 10 // spelling error intentional</p>
+
+              <p>As you can see in the above code, my_varaible is a spelling mistake that the programmer could have very well made. The problem here is that, since Python is dynamically typed, it will not return an error, but instead will create a new variable called my_varaible. So, now we have two variables: my_variable and my_varaible. This obviously is a serious problem; some would suggest that forced variable declaration is an important requirement in any programming language.</p>
+
+              <p>There are obvious advantages and disadvantages to both dynamic and static typed languages, as well as strong and weak.  I guess it boils down to personal preference.</p>
+
+				</div>
+			<footer class="clear">&copy;2014.  All Rights Reserved.</footer>
+		</div><!--wrapper -->
+	</body>
+</html>
